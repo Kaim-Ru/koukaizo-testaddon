@@ -1,0 +1,31 @@
+{
+  "format_version": "1.10.0",
+  "animations": {
+    "animation.large_item.hold": {
+      //アニメーションのid的な
+      "loop": true,
+      "bones": {
+        "rightitem": {
+          //アイテムの位置、回転、大きさを指定してます。
+          //c.is_first_personはMolangというマイクラの簡易的な言語で使われる、変数です。
+          //プレイヤーが一人称視点かどうかを判定する変数です。
+          "position": [
+            "c.is_first_person ? -6 : 1", //一人称のときにtrueになるので、三項演算子をつかって、一人称のときは-6、そうでないときは1を指定してます。以下同様
+            "c.is_first_person ? 0 : -1",
+            "c.is_first_person ? -1 : -6"
+          ],
+          "rotation": [
+            "c.is_first_person ? 45 : 15",
+            "c.is_first_person ? -15 : 0",
+            "c.is_first_person ? 30 : -165"
+          ],
+          "scale": [
+            "c.is_first_person ? 1 : 0.5",
+            "c.is_first_person ? 1 : 0.5",
+            "c.is_first_person ? 1 : 0.5"
+          ]
+        }
+      }
+    }
+  }
+}

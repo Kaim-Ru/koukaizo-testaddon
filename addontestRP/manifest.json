@@ -1,0 +1,24 @@
+{
+	"format_version": 2,
+	"header": {
+		"name": "アドオンテスト。",
+		"description": "アドオンテスト。 Resource Pack",
+		"uuid": "1e51f162-fa07-28f9-0e40-65b42dd93638",
+		"version": [1, 0, 0],
+		"min_engine_version": [1, 16, 0]
+	},
+	"metadata": {
+		"authors": ["kaimayosource"],
+		"generated_with": {
+			"blockbench_item_wizard": ["1.2.0"]
+		}
+	},
+	"modules": [
+		{
+			"description": "アドオンテスト。",
+			"type": "resources",
+			"uuid": "9efe618a-a099-a0dd-8ecd-3f0bf9f66a7a",
+			"version": [1, 0, 0]
+		}
+	]
+}

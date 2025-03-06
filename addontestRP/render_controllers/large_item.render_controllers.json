@@ -1,0 +1,13 @@
+//これはレンダーコントローラー（略してレンコン）表示の設定などを行うファイルです。
+{
+  "format_version": "1.8.0",
+  "render_controllers": {
+    "controller.render.large_item": {
+      "geometry": "Geometry.default", //ジオメトリを指定します。アイテムの形です。
+      "materials": [
+        { "*": "variable.is_enchanted ? Material.enchanted : Material.default" } //エンチャントされてるときにマテリアルを変えます
+      ],
+      "textures": ["Texture.default", "Texture.enchanted"] //テクスチャを２つ指定してます（通常用とエンチャント用）
+    }
+  }
+}

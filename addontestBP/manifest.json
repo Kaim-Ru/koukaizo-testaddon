@@ -1,0 +1,30 @@
+{
+  "format_version": 2,
+  "header": {
+    "name": "アドオンテスト。",
+    "description": "アドオンテスト。 Behavior Pack",
+    "uuid": "a799326b-2a8a-42b9-aad9-9a513529cecd",
+    "version": [1, 0, 0],
+    "min_engine_version": [1, 20, 0]
+  },
+  "metadata": {
+    "authors": ["kaimayosource"],
+    "generated_with": {
+      "blockbench_item_wizard": ["1.2.0"]
+    }
+  },
+  "modules": [
+    {
+      "description": "Behavior",
+      "version": [1, 0, 0],
+      "uuid": "2e953c3e-16dd-4d5b-a90b-24638415cbd2",
+      "type": "data"
+    }
+  ],
+  "dependencies": [
+    {
+      "uuid": "d82d1ebc-d5f4-4234-93f5-fc35bb264fc4",
+      "version": [1, 0, 0]
+    }
+  ]
+}
