@@ -18,6 +18,7 @@
         {
           "name": "rightitem",
           "pivot": [0, 0, 0],
+          "binding": "q.item_slot_to_bone_name(c.item_slot)",
           "texture_meshes": [
             {
               "texture": "default",

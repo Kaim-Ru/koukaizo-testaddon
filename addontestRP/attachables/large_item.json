@@ -17,10 +17,14 @@
         "default": "geometry.large_item" //アイテム用のジオメトリだね。ジオメトリは絶対に指定しなきゃいけないからこれ作ってるよ
       },
       "animations": {
-        "hold": "animation.large_item.hold" //ここでアニメーションを定義してます。キーはscriptsやanimation_controllersで使います。
+        "third": "animation.large_item.third_person", //ここでアニメーションを定義してます。キーはscriptsやanimation_controllersで使います。
+        "first": "animation.large_item.first_person"
       },
       "scripts": {
-        "animate": ["hold"] //最初に発動するアニメーションを指定するよ。エンティティが読み込まれたときに流れる。animationのloopがtrueだとずっと流れる。
+        "animate": [
+          { "third": "!c.is_first_person" },
+          { "first": "c.is_first_person" }
+        ] //最初に発動するアニメーションを指定するよ。エンティティが読み込まれたときに流れる。animationのloopがtrueだとずっと流れる。
       },
       "render_controllers": ["controller.render.large_item"] //表示設定。レンダーコントローラーです。
     }
